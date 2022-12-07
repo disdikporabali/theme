@@ -16,7 +16,7 @@
             {{ $errors->first() }}
         </div>
         @endif
-        <form action="{{ url('login') }}" method="POST">
+        <form action="{{ route('login') }}" method="POST">
             @csrf
             <div class="form-group position-relative has-icon-left mb-4">
                 <input class="form-control form-control-xl" type="number" name="nip" placeholder="NIP"
